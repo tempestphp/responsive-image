@@ -24,7 +24,7 @@ final class Image
         get {
             $html = '<img src="' . $this->src . '"';
 
-            if ($this->alt) {
+            if ($this->alt !== null) {
                 $html .= ' alt="' . $this->alt . '"';
             }
 
